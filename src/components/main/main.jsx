@@ -35,7 +35,7 @@ const Main = () => {
             </button>
             <hr class="hr-text" data-content="OR" />
             <div className="search">
-                더 다양한 음식들을 보고 싶다면?
+                더 다양한 음식들을 보고 싶다면????????????????????????/
             </div>
             <div>
               <div className="cate">
