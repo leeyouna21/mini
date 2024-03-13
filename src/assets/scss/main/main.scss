@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body{
+    font-family: Pretendard !important;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .container {
+        margin: 0 auto;
+        width: calc(100% - 50%);
+        height: auto;
+        background: #fff;
+        position: absolute;
+        // top: 30%;
+        left: 50%;
+        transform: translate(-50%, 15%);
+        form {}
+        .form-label {
+            text-align: center;
+            font-size: 25px;
+            color: #000;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            span {}
+        }
+        .main_wrap {
+            width: calc(100% - 240px);
+            margin: 0 auto;
+            height: auto;
+            position: relative;
+            .search {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                height: 60px;
+                background: #F9FAFB;
+                border-radius: 5px;
+            }
+            .searcbar {
+                margin-top: 20px;
+                width: 100%;
+                height: 60px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                color: #fff;
+                background: #E64D0B;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            .hr-text {
+                margin-bottom: 30px;
+                line-height: 1em;
+                position: relative;
+                outline: 0;
+                border: 0;
+                color: black;
+                text-align: center;
+                height: 1.5em;
+                opacity: .5;
+                &:before {
+                    content: '';
+                    background: #878787;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 100%;
+                    height: 1px;
+                }
+                &:after {
+                    content: attr(data-content);
+                    position: relative;
+                    display: inline-block;
+                    color: black;
+                    padding: 0 .5em;
+                    line-height: 1.5em;
+                    color: #818078;
+                    background-color: #fcfcfa;
+                }
+            }
+            .cate {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 60px;
+                margin-bottom: 100px;
+                margin-top: 20px;
+                button {
+                    flex: 1;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    font-size: 15px;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
