@@ -1,108 +1,114 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-body{
+
+body {
     font-family: Pretendard !important;
-}
-.main {
     width: 100%;
     height: 100%;
-    position: relative;
-    .container {
-        margin: 0 auto;
-        width: calc(100% - 50%);
-        height: auto;
-        background: #fff;
-        position: absolute;
-        // top: 30%;
-        left: 50%;
-        transform: translate(-50%, 15%);
-        form {}
-        .form-label {
-            text-align: center;
-            font-size: 25px;
-            color: #000;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            span {}
-        }
-        .main_wrap {
-            width: calc(100% - 240px);
-            margin: 0 auto;
-            height: auto;
-            position: relative;
-            .search {
-                font-size: 17px;
-                margin-bottom: 10px;
-            }
-            input {
-                width: 100%;
-                border: none;
-                outline: none;
-                height: 60px;
-                background: #F9FAFB;
-                border-radius: 5px;
-            }
-            .searcbar {
-                margin-top: 20px;
-                width: 100%;
-                height: 60px;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-                color: #fff;
-                background: #E64D0B;
-                font-size: 15px;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                margin-bottom: 30px;
-            }
-            .hr-text {
-                margin-bottom: 30px;
-                line-height: 1em;
-                position: relative;
-                outline: 0;
-                border: 0;
-                color: black;
-                text-align: center;
-                height: 1.5em;
-                opacity: .5;
-                &:before {
-                    content: '';
-                    background: #878787;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    width: 100%;
-                    height: 1px;
-                }
-                &:after {
-                    content: attr(data-content);
-                    position: relative;
-                    display: inline-block;
-                    color: black;
-                    padding: 0 .5em;
-                    line-height: 1.5em;
-                    color: #818078;
-                    background-color: #fcfcfa;
-                }
-            }
-            .cate {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                height: 60px;
-                margin-bottom: 100px;
-                margin-top: 20px;
-                button {
-                    flex: 1;
-                    border-radius: 5px;
-                    border: 1px solid #ccc;
-                    background: #fff;
-                    font-size: 15px;
-                    cursor: pointer;
-                    border: none;
-                    outline: none;
-                }
-            }
-        }
-    }
+    background: #fff0f0;
 }
+
+.main {
+    .background {
+        width: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-label {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        z-index: 1;
+        transform: translate(-50%, 15%);
+    }
+    .top_wrap {
+        position: absolute;
+        top: 25%;
+        transform: translate(-50%, 15%);
+        left: 50%;
+        width: calc(100% - 75%);
+        margin: 0 auto;
+        height: auto;
+        .search_text {
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+        .searchbar {
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            ::placeholder {
+                font-family: Pretendard;
+            }
+        }
+        .hr-text {
+            margin-bottom: 30px;
+            line-height: 1em;
+            position: relative;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            text-align: center;
+            height: 1.5em;
+            opacity: 0.5;
+    
+            &:before {
+                content: "";
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                height: 1px;
+            }
+    
+            &:after {
+                content: attr(data-content);
+                position: relative;
+                display: inline-block;
+                color: #fff;
+                padding: 0 0.5em;
+                line-height: 1.5em;
+                color: #fff;
+            }
+        }
+    }   
+}
+.cate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  
+    button {
+      flex: 1;
+      width: 115px;
+      height: 110px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      margin: 0 30px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
