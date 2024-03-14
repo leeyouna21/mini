@@ -38,12 +38,17 @@ const Main = () => {
           <hr class="hr-text" data-content="OR" />
         </div>
         <div className="bottom_wrap">
+        <div className="recommend">
+                # 오늘의 인기 RECIPE
+            </div>
         <div className="cate">
-                <button><img src = {jjigae} alt = "된장찌개" /></button>
-                <button><img src = {spa} alt = "토마토스파게티" /></button>
-                <button><img src = {cho} alt = "초밥" /></button>
-                <button><img src = {jja} alt = "짜장면" /></button>
+                <button data-text="#된장찌개"><img src = {jjigae} alt = "된장찌개" /></button>
+                <button data-text="#토마토 스파게티"><img src = {spa} alt = "토마토스파게티" /></button>
+                <button data-text="#초밥"><img src = {cho} alt = "초밥" /></button>
+                <button data-text="#짜장면"><img src = {jja} alt = "짜장면" /></button>
               </div>
+        <div className="foodname">
+        </div>
         </div>
         {/* bottom_wrap이라는 부모 요소 안에서 작업해주세요
         위치값이 안 잡히면, bottom_wrap여기에 position relative를 주시고
