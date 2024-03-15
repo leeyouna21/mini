@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "openai": "^4.28.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fullpage": "^0.1.19",
@@ -21,7 +22,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "npx vite --host"
-
   },
   "eslintConfig": {
     "extends": [
