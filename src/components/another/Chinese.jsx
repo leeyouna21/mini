@@ -1,6 +1,6 @@
 import React from 'react'
 
-const chinese = () => {
+const Chinese = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const chinese = () => {
   )
 }
 
-export default chinese
+export default Chinese

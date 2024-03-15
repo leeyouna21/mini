@@ -1,6 +1,6 @@
 import React from 'react'
 
-const japanese = () => {
+const Japanese = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const japanese = () => {
   )
 }
 
-export default japanese
+export default Japanese

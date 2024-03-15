@@ -1,6 +1,6 @@
 import React from 'react'
 
-const kor = () => {
+const Kor = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const kor = () => {
   )
 }
 
-export default kor
+export default Kor

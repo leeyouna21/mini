@@ -1,6 +1,6 @@
 import React from 'react'
 
-const usa = () => {
+const Usa = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const usa = () => {
   )
 }
 
-export default usa
+export default Usa

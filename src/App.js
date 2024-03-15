@@ -2,7 +2,7 @@
 import Main from "./components/main/main";
 import Chat from "./components/another/Chat";
 import Kor from "./components/another/Kor";
-import Usa from "./components/another/Usa";
+import Usa from "./components/another/America";
 import Chinese from "./components/another/Chinese";
 import Japanese from "./components/another/Japanese";
 
