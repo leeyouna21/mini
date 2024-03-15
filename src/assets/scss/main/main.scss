@@ -104,21 +104,26 @@ body {
             margin-left: calc(18% - 5px);
             position: relative;
         
-            button {
-                flex: 1;
-                margin-top: 3%;
-                width: 115px;
-                height: 110px;
-                border-radius: 10px;
-                border: 1px solid #ccc;
-                background: #fff;
-                font-size: 15px;
-                cursor: pointer;
-                border: none;
-                outline: none;
-                margin-left: 20px;
-                margin-right: 20px;
-                
+                button {
+                    flex: 1;
+                    margin-top: 4%;
+                    width: 75px;
+                    height: 150px;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    transition: all 0.3s ease-in-out;
+                    
+
+                    &:hover{
+                    transform: scale(1.03);
+                    }
                 
         
                 img {
@@ -126,6 +131,8 @@ body {
                     height: 100%;
                     object-fit: cover;
                     border-radius: 10px;
+                    overflow: hidden;
+                    text-align: center;
                 }
             }
         }
@@ -133,7 +140,7 @@ body {
         .recommend {
             position: absolute; 
             top: 0px; 
-            left: calc(19% - 5px); 
+            left: 19%; 
             color: #000000;
             font-size: 20px;
             z-index: 1;
