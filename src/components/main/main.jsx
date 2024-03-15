@@ -6,12 +6,14 @@ import cho from '../../assets/images/cb.webp';
 import jja from '../../assets/images/jj.jpg';
 //import { useNavigation } from '@react-navigation/native';
 
-const Main = () => {
-  // const navigation = useNavigation();
 
-  // const onClickSearchButton = () => {
-  //   navigation.navigate('/Chat');
-  // };
+const Main = () => {
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      // 엔터 키를 눌렀을 때 '/Chat' 경로로 이동합니다.
+      window.location.href = '/Chat';
+    }
+   };
   return (
     <div className="main">
       <img className='background' src={image}  alt = "Pic" />
@@ -25,6 +27,7 @@ const Main = () => {
               검색하기
           </div>
           <input className='searchbar' type="text" placeholder="원하는 레시피, 무엇이든 물어보세요!"
+          onKeyPress={handleKeyPress}
             //   onFocus={(e) => {
             //   e.target.style.border = '1px solid #E64D0B';
             // }}
@@ -42,10 +45,10 @@ const Main = () => {
                 # 오늘의 인기 RECIPE
             </div>
         <div className="cate">
-                <button data-text="#된장찌개"><img src = {jjigae} alt = "된장찌개" /></button>
-                <button data-text="#토마토 스파게티"><img src = {spa} alt = "토마토스파게티" /></button>
-                <button data-text="#초밥"><img src = {cho} alt = "초밥" /></button>
-                <button data-text="#짜장면"><img src = {jja} alt = "짜장면" /></button>
+                <button data-text="#된장찌개" title='클릭하시면, 해당 레시피로 이동합니다.'><img src = {jjigae} alt = "된장찌개" /></button>
+                <button data-text="#토마토 스파게티" title='클릭하시면, 해당 레시피로 이동합니다.'><img src = {spa} alt = "토마토스파게티" /></button>
+                <button data-text="#초밥" title='클릭하시면, 해당 레시피로 이동합니다.'><img src = {cho} alt = "초밥" /></button>
+                <button data-text="#짜장면" title='클릭하시면, 해당 레시피로 이동합니다.'><img src = {jja} alt = "짜장면" /></button>
               </div>
         <div className="foodname">
         </div>
