@@ -23,6 +23,7 @@ body {
         color: #fff;
         z-index: 1;
         transform: translate(-50%, 15%);
+        font-family: "Pretendard";
     }
     .top_wrap {
         position: absolute;
@@ -32,11 +33,13 @@ body {
         width: calc(100% - 75%);
         margin: 0 auto;
         height: auto;
+
         .search_text {
             color: #fff;
             font-size: 17px;
             margin-bottom: 20px;
         }
+
         .searchbar {
             width: 100%;
             height: 50px;
@@ -44,10 +47,13 @@ body {
             outline: none;
             border: none;
             border-radius: 6px;
+            padding-left: 10px;
+
             ::placeholder {
-                font-family: Pretendard;
+                font-family: "Pretendard";
             }
         }
+
         .hr-text {
             margin-bottom: 30px;
             line-height: 1em;
@@ -58,6 +64,7 @@ body {
             text-align: center;
             height: 1.5em;
             opacity: 0.5;
+            margin-top: 70px;
     
             &:before {
                 content: "";
@@ -80,35 +87,64 @@ body {
             }
         }
     }   
-}
-.cate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    margin-bottom: 100px;
-    margin-top: 20px;
-  
-    button {
-      flex: 1;
-      width: 115px;
-      height: 110px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      background: #fff;
-      font-size: 15px;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      margin: 0 30px;
-  
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
+
+    .bottom_wrap {
+        position: relative;
+        margin-left: 3%;
+        margin-right: 3%;
+        .cate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 36%);
+            margin: 0 auto;
+            height: auto;
+            margin-bottom: 100px;
+            margin-top: 20px;
+            margin-left: calc(18% - 5px);
+            position: relative;
+        
+            button {
+                flex: 1;
+                margin-top: 3%;
+                width: 115px;
+                height: 110px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                background: #fff;
+                font-size: 15px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+                
+        
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .recommend {
+            position: absolute; 
+            top: 0px; 
+            left: calc(19% - 5px); 
+            color: #000000;
+            font-size: 20px;
+            z-index: 1;
+            font-family: "Pretendard";
+        }
+        .cate button::after {
+            content: attr(data-text);
+            display: block;
+            text-align: left;
+            margin-top: 5px;
+            font-family: "Pretendard";
+        }
+        }
     }
-  }

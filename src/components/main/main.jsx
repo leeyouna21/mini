@@ -1,10 +1,11 @@
 import React from 'react';
-import image from '../../assets/images/tomato.png';
-// import jjigae from '../../assets/images/dj.jpg';
-// import spa from '../../assets/images/ts.jpg';
-// import cho from '../../assets/images/cb.webp';
-// import jja from '../../assets/images/jj.jpg';
-// import { useNavigation } from '@react-navigation/native';
+import image from '../../assets/images/pic.png';
+import jjigae from '../../assets/images/dj.jpg';
+import spa from '../../assets/images/ts.jpg';
+import cho from '../../assets/images/cb.webp';
+import jja from '../../assets/images/jj.jpg';
+//import { useNavigation } from '@react-navigation/native';
+
 
 const Main = () => {
   // const navigation = useNavigation();
@@ -37,7 +38,19 @@ const Main = () => {
           </button> */}
           <hr class="hr-text" data-content="OR" />
         </div>
-        <div className="bottom_wrap"></div>
+        <div className="bottom_wrap">
+        <div className="recommend">
+                # 오늘의 인기 RECIPE
+            </div>
+        <div className="cate">
+                <button data-text="#된장찌개"><img src = {jjigae} alt = "된장찌개" /></button>
+                <button data-text="#토마토 스파게티"><img src = {spa} alt = "토마토스파게티" /></button>
+                <button data-text="#초밥"><img src = {cho} alt = "초밥" /></button>
+                <button data-text="#짜장면"><img src = {jja} alt = "짜장면" /></button>
+              </div>
+        <div className="foodname">
+        </div>
+        </div>
         {/* bottom_wrap이라는 부모 요소 안에서 작업해주세요
         위치값이 안 잡히면, bottom_wrap여기에 position relative를 주시고
         나머지 요소에 position absolute로 위치값 잡아서 해주세요
