@@ -4,7 +4,7 @@ import jjigae from '../../assets/images/dj.jpg';
 import spa from '../../assets/images/ts.jpg';
 import cho from '../../assets/images/cb.webp';
 import jja from '../../assets/images/jj.jpg';
-//import { useNavigation } from '@react-navigation/native';
+
 
 
 const Main = () => {
